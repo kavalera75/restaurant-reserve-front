@@ -1,56 +1,87 @@
 body{
-    background-color: #FF5722;
+    background-image: linear-gradient(250deg, #BF0E28 0%, #87101E 100%) !important;
     padding: 0;
     margin: 0;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 li{
     list-style-type: none;
     height: 70px;
     width: 70px;
-    background-color: #FF5722;
+    background-color: white;
+    border: 1px solid #87101E;
+    color: #87101E;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:  #f1e7e6;
+}
+
+li.disable{
+    opacity: 0.4;
+}
+
+li.selected{
+    background-color: #87101E;
+    color: white;
 }
 
 ul{
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
-    background-color: #f1e7e6;
-    padding: 2rem;
     justify-content: center;
     align-items: center;
     border-radius: 3%;
     max-width: 450px;
 }
 
+
 #container{
-    width: 100%;
+    width: 75%;
     display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    border-radius: 12px;
+    padding: 1rem;
 }
 
 form{
-    height: 700px; 
     width: 650px;
-    background-color: #FF5722;
     padding: 1rem;
 }
 
 form input{
     width: 100%;
-    height: 35px;
+    height: 40px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+}
+
+
+form input:focus{
+    outline:0;
+
 }
 
 form div{
-    display:
+    display: block;
+    float: left;
+    width: 50%;
+}
 
+form label{ 
+    color: #BF0E28;
 }
 
 form div label{
